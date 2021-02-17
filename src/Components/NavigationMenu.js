@@ -54,36 +54,15 @@ const NavigationMenu = () => {
                     <animated.div 
                     key={key} 
                     style={props}
-                    className="fixed bg-white top-0 left-0 w-2/3 sm:w-1/2 lg:w-1/3 xl:w-1/4 h-full z-50 shadow pl-5 pt-3"
+                    className="fixed bg-gray-900 top-0 left-0 w-2/3 sm:w-1/2 lg:w-1/3 xl:w-1/4 h-full z-50 shadow pl-5 pt-3"
                     >
-                        <span className="font-bold py-3 block">
-                            Menu
-                        </span>
-                        <ul>
-                            <li>
-                                <Link to="/" className="text-blue-500 py-3 border-t border-b block" onClick={() => setShowMenu(false)}>
-                                    Inicio
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/login" className="text-blue-500 py-3 border-b block" onClick={() => setShowMenu(false)}>
-                                    Estudio
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/trabajo" className="text-blue-500 py-3 border-b block" onClick={() => setShowMenu(false)}>
-                                    Trabajo
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/contacto" className="text-blue-500 py-3 border-b block" onClick={() => setShowMenu(false)}>
-                                    Contacto
-                                </Link>
-                            </li>
-                            <li className="text-blue-500 py-3 border-b block" onClick={() => setShowMenu(false)}>
-                                Crea tu vela
-                            </li>
-                        </ul>
+                        <br />
+                        <p className="font-sans font-bold text-4xl text-gray-300">Contacto</p>
+                        <br /><br /><br />
+                        <p className="font-sans font-light text-2xl text-gray-300">Correo: approved.by.gerardo@gmail.com</p><br /><br />
+                        <p className="font-sans font-light text-2xl text-gray-300">Telefono: (+52) 644-195-2680</p><br /><br />
+                        <p className="font-sans font-light text-2xl text-gray-300">Facebook: ApprovedByGerardo</p><br /><br />
+                        
                     </animated.div>
                 )
             }
@@ -95,7 +74,23 @@ const NavigationMenu = () => {
                 </Link>
                 
             </div>
-            
+            <div>
+                <ul className="flex pl-24">
+                    <li>
+                        <Link to="/" className="font-sans font-light text-xl text-gray-300 py-3 block pr-6" onClick={() => setShowMenu(false)}>
+                            Inicio
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/trabajo" className="font-sans font-light text-xl text-gray-300 py-3  block pr-6" onClick={() => setShowMenu(false)}>
+                            Portafolio
+                        </Link>
+                    </li>
+                    <li className="font-sans font-light text-xl text-gray-300 py-3  block pr-6 cursor-pointer" onClick={() => setShowMenu(true)}>
+                        Contacto
+                    </li>
+                </ul>
+            </div>
         </>
      );
 }

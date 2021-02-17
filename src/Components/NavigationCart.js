@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-//import {useTransition} from 'react-spring'
+
 import logobien from '../IMG/logobien.jpeg'
+
 
 
 const NavigationCart = () => {
@@ -18,8 +19,8 @@ const NavigationCart = () => {
         from: { opacity: 0, transform: 'translateY(-100%)' },
         enter: { opacity: 1, transform: 'translateY(0%)' },
         leave: { opacity: 0, transform: 'translateY(-100%)' },
-        })
-*/
+        })*/
+
 
     return ( 
         <>
@@ -40,6 +41,7 @@ const NavigationCart = () => {
             </span>
 
             
+            
         </>
      );
 }
@@ -58,7 +60,6 @@ export default NavigationCart;
         Crea tu vela
     </li>
 </ul> 
-
 
 
 {
@@ -118,4 +119,5 @@ export default NavigationCart;
                     </animated.div>
                 )
             }
+
 */
